@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7C529EAF510ED98165897EA /* Pods_Camera_Filter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E2E8C4210D6CE9EF7B4FC2 /* Pods_Camera_Filter.framework */; };
 		EF523DDE2604860600C8136A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF523DDD2604860600C8136A /* AppDelegate.swift */; };
 		EF523DE02604860600C8136A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF523DDF2604860600C8136A /* SceneDelegate.swift */; };
 		EF523DE22604860600C8136A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF523DE12604860600C8136A /* ViewController.swift */; };
 		EF523DE52604860600C8136A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF523DE32604860600C8136A /* Main.storyboard */; };
 		EF523DE72604860700C8136A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF523DE62604860700C8136A /* Assets.xcassets */; };
 		EF523DEA2604860700C8136A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF523DE82604860700C8136A /* LaunchScreen.storyboard */; };
+		EF523DF32604871100C8136A /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF523DF22604871100C8136A /* PhotosCollectionViewController.swift */; };
+		EFE880502604904A00488A72 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE8804F2604904A00488A72 /* PhotoCollectionViewCell.swift */; };
+		EFE8805426049EB400488A72 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE8805326049EB400488A72 /* FilterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39217757A6EC4577A8B922F3 /* Pods-Camera Filter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Camera Filter.release.xcconfig"; path = "Target Support Files/Pods-Camera Filter/Pods-Camera Filter.release.xcconfig"; sourceTree = "<group>"; };
+		5D74AB6F977B6A51FAA91281 /* Pods-Camera Filter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Camera Filter.debug.xcconfig"; path = "Target Support Files/Pods-Camera Filter/Pods-Camera Filter.debug.xcconfig"; sourceTree = "<group>"; };
+		A5E2E8C4210D6CE9EF7B4FC2 /* Pods_Camera_Filter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Camera_Filter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF523DDA2604860600C8136A /* Camera Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF523DDD2604860600C8136A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF523DDF2604860600C8136A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		EF523DE62604860700C8136A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF523DE92604860700C8136A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF523DEB2604860700C8136A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF523DF22604871100C8136A /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		EFE8804F2604904A00488A72 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFE8805326049EB400488A72 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C529EAF510ED98165897EA /* Pods_Camera_Filter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02880725AE9E7EAFBDB43204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2E8C4210D6CE9EF7B4FC2 /* Pods_Camera_Filter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F4BAB1FABD913C68722B0CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D74AB6F977B6A51FAA91281 /* Pods-Camera Filter.debug.xcconfig */,
+				39217757A6EC4577A8B922F3 /* Pods-Camera Filter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF523DD12604860600C8136A = {
 			isa = PBXGroup;
 			children = (
 				EF523DDC2604860600C8136A /* Camera Filter */,
 				EF523DDB2604860600C8136A /* Products */,
+				3F4BAB1FABD913C68722B0CF /* Pods */,
+				02880725AE9E7EAFBDB43204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +89,13 @@
 				EF523DDD2604860600C8136A /* AppDelegate.swift */,
 				EF523DDF2604860600C8136A /* SceneDelegate.swift */,
 				EF523DE12604860600C8136A /* ViewController.swift */,
+				EF523DF22604871100C8136A /* PhotosCollectionViewController.swift */,
+				EFE8804F2604904A00488A72 /* PhotoCollectionViewCell.swift */,
 				EF523DE32604860600C8136A /* Main.storyboard */,
 				EF523DE62604860700C8136A /* Assets.xcassets */,
 				EF523DE82604860700C8136A /* LaunchScreen.storyboard */,
 				EF523DEB2604860700C8136A /* Info.plist */,
+				EFE8805326049EB400488A72 /* FilterService.swift */,
 			);
 			path = "Camera Filter";
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF523DEE2604860700C8136A /* Build configuration list for PBXNativeTarget "Camera Filter" */;
 			buildPhases = (
+				724886A801987321829B3CA6 /* [CP] Check Pods Manifest.lock */,
 				EF523DD62604860600C8136A /* Sources */,
 				EF523DD72604860600C8136A /* Frameworks */,
 				EF523DD82604860600C8136A /* Resources */,
+				1B5E8D628652FF13932F8637 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +167,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B5E8D628652FF13932F8637 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Camera Filter/Pods-Camera Filter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Camera Filter/Pods-Camera Filter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Camera Filter/Pods-Camera Filter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		724886A801987321829B3CA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Camera Filter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF523DD62604860600C8136A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF523DF32604871100C8136A /* PhotosCollectionViewController.swift in Sources */,
+				EFE880502604904A00488A72 /* PhotoCollectionViewCell.swift in Sources */,
 				EF523DE22604860600C8136A /* ViewController.swift in Sources */,
+				EFE8805426049EB400488A72 /* FilterService.swift in Sources */,
 				EF523DDE2604860600C8136A /* AppDelegate.swift in Sources */,
 				EF523DE02604860600C8136A /* SceneDelegate.swift in Sources */,
 			);
@@ -283,10 +363,12 @@
 		};
 		EF523DEF2604860700C8136A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D74AB6F977B6A51FAA91281 /* Pods-Camera Filter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2BDQRSF4K;
 				INFOPLIST_FILE = "Camera Filter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,10 +383,12 @@
 		};
 		EF523DF02604860700C8136A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39217757A6EC4577A8B922F3 /* Pods-Camera Filter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2BDQRSF4K;
 				INFOPLIST_FILE = "Camera Filter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
